@@ -1,0 +1,101 @@
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0px 30px;
+  margin-bottom: 80px;
+  color: #000;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+
+}
+
+.brand {
+  margin-left: 30px;
+  font-family: "Montserrat", serif;
+
+  font-size: xx-large;
+}
+
+.logo {
+  height: 50px;
+  border-radius: 10%;
+  margin-left: 20px;
+}
+
+.sidebar-title>span {
+  display: none;
+}
+
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 650;
+
+}
+
+.sidebar-list-item {
+  padding: 20px 0px 20px 20px;
+  font-size: 18px;
+  margin-bottom: 0px;
+
+}
+
+.sidebar-list-item:hover {
+  background-color: rgba(193, 220, 220, 0.63);
+  cursor: pointer;
+  color: #000;
+}
+
+.sidebar-list-item>a {
+  text-decoration: solid;
+  color: rgba(36, 79, 164, 0.479);
+}
+
+.icon {
+  height: fit-content;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /*
+    we want the z-index of the sidebar higher so that
+    the charts are not showing over the sidebar 
+    on small screens
+  */
+  z-index: 12 !important;
+}
+
+.sidebar-visual {
+  width: 90%;
+  margin-left: 4%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5%;
+}
